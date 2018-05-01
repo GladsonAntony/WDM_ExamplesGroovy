@@ -4,7 +4,7 @@
  * @Time 12:10:17 AM
  */
 
-package examples
+package webDriverManagerExamples
 
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.chrome.ChromeDriver

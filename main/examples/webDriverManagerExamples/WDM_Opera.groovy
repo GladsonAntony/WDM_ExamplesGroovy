@@ -3,7 +3,7 @@
  * @Date 30-Sep-2017 
  * @Time 12:30:03 AM
  */
-package examples
+package webDriverManagerExamples
 
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.chrome.ChromeOptions

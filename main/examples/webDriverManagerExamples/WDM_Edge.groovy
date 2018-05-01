@@ -3,7 +3,7 @@
  * @Date 29-Sep-2017 
  * @Time 11:51:13 PM
  */
-package examples
+package webDriverManagerExamples
 
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.edge.EdgeDriver
