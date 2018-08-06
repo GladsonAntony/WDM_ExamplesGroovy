@@ -3,15 +3,14 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <!-- <class name="webDriverManagerExamples.WDM_Firefox"/> -->
+      <class name="webDriverManagerExamples.WDM_Firefox"/>
       <class name="webDriverManagerExamples.WDM_FirefoxHeadless"/>
-<!--       <class name="webDriverManagerExamples.WDM_Chrome"/>
-      <class name="webDriverManagerExamples.WDM_Opera_ChromeDriver"/>
+      <class name="webDriverManagerExamples.WDM_Chrome"/>
       <class name="webDriverManagerExamples.WDM_PhantomJS"/>
       <class name="webDriverManagerExamples.WDM_ChromeHeadless"/>
       <class name="webDriverManagerExamples.WDM_Edge"/>
       <class name="webDriverManagerExamples.WDM_Opera"/>
-      <class name="webDriverManagerExamples.WDM_InternetExplorer"/> -->
+      <!-- <class name="webDriverManagerExamples.WDM_InternetExplorer"/> -->
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>  <!-- Test -->
+</suite><!-- Suite -->

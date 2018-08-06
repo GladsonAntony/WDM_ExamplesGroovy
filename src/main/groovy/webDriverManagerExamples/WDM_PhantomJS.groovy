@@ -39,5 +39,6 @@ class WDM_PhantomJS
 	void after() 
 	{
 		driver.close()
+		driver.quit()
 	}
 }

@@ -36,5 +36,6 @@ class WDM_FirefoxHeadless
 	void after()
 	{		
 		driver.close()
+		driver.quit()
 	}
 }

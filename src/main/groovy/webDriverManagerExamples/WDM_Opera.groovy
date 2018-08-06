@@ -27,7 +27,7 @@ class WDM_Opera
 		OperaDriverManager.getInstance().setup()
 		capabilities = DesiredCapabilities.operaBlink()
 		OperaOptions optionsOpera = new OperaOptions()
-		optionsOpera.setBinary('C:/Program Files/Opera/launcher.exe')
+		optionsOpera.setBinary('C:/Program Files/Opera/54.0.2952.64/opera.exe')
 		capabilities.setCapability(ChromeOptions.CAPABILITY, optionsOpera)
 		driver = new OperaDriver(capabilities)
 		driver.get('https://www.google.co.in/')

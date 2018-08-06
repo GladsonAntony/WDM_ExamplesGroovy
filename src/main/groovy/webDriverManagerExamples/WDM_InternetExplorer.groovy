@@ -39,5 +39,6 @@ class WDM_InternetExplorer
 	void after()
 	{
 		driver.close()
+		driver.quit()
 	}
 }

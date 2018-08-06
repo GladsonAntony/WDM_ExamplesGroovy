@@ -32,5 +32,6 @@ class WDM_Chrome
 	void after()
 	{
 		driver.close()
+		driver.quit()
 	}
 }

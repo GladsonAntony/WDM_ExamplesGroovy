@@ -32,5 +32,6 @@ class WDM_Edge
 	void after()
 	{
 		driver.close()
+		driver.quit()
 	}
 }

@@ -35,6 +35,7 @@ class WDM_ChromeHeadless
 	void after()
 	{
 		driver.close()
+		driver.quit()
 	}
 
 
