@@ -6,6 +6,8 @@
 *.out
 *.swp
 *.zip
+.allure
+/allure-results/
 0
 
 #folders
@@ -22,3 +24,8 @@ test-output
 
 #gedit
 *.*~
+\.classpath
+
+\.settings/org\.eclipse\.jdt\.core\.prefs
+
+\.settings/
