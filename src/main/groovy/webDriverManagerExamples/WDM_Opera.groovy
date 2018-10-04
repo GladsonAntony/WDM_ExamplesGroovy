@@ -11,7 +11,7 @@ import org.openqa.selenium.opera.OperaDriver
 import org.openqa.selenium.opera.OperaOptions
 import org.openqa.selenium.remote.DesiredCapabilities
 import org.testng.Assert
-import org.testng.annotations.AfterTest
+import org.testng.annotations.AfterMethod
 import org.testng.annotations.Test
 
 import io.github.bonigarcia.wdm.WebDriverManager
@@ -27,7 +27,7 @@ class WDM_Opera
 		WebDriverManager.operadriver().arch64().setup()
 		capabilities = DesiredCapabilities.operaBlink()
 		OperaOptions optionsOpera = new OperaOptions()
-		optionsOpera.setBinary('C:/Program Files/Opera/54.0.2952.64/opera.exe')
+		optionsOpera.setBinary('C:/Program Files/Opera/56.0.3051.36/opera.exe')
 		capabilities.setCapability(ChromeOptions.CAPABILITY, optionsOpera)
 		driver = new OperaDriver(capabilities)
 		driver.get('https://www.google.co.in/')
@@ -35,7 +35,7 @@ class WDM_Opera
 		Assert.assertEquals(driver.getTitle(), 'Google')
 	}
 
-	@AfterTest(alwaysRun=true)
+	@AfterMethod(alwaysRun=true)
 	void after()
 	{
 		driver.quit()

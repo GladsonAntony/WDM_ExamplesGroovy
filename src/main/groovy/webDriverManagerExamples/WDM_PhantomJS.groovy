@@ -10,7 +10,7 @@ import org.openqa.selenium.phantomjs.PhantomJSDriver
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
 import org.testng.Assert
-import org.testng.annotations.AfterTest
+import org.testng.annotations.AfterMethod
 import org.testng.annotations.Test
 
 import io.github.bonigarcia.wdm.WebDriverManager
@@ -33,7 +33,7 @@ class WDM_PhantomJS
 		Assert.assertEquals(driver.getTitle(), 'Google');
 	}
 
-	@AfterTest(alwaysRun=true)
+	@AfterMethod(alwaysRun=true)
 	void after() 
 	{
 		driver.close()
