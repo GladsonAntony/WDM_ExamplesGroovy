@@ -12,7 +12,7 @@ import org.testng.Assert
 import org.testng.annotations.AfterTest
 import org.testng.annotations.Test
 
-import io.github.bonigarcia.wdm.ChromeDriverManager
+import io.github.bonigarcia.wdm.WebDriverManager
 
 class WDM_ChromeHeadless 
 {
@@ -21,7 +21,7 @@ class WDM_ChromeHeadless
 	@Test
 	public void test_ChromeHeadless() throws Exception
 	{
-		ChromeDriverManager.getInstance().setup()
+		WebDriverManager.chromedriver().arch64().setup();
 		ChromeOptions chromeOptions = new ChromeOptions()
 		chromeOptions.addArguments('--headless')
 		chromeOptions.addArguments('--disable-gpu')

@@ -10,7 +10,7 @@
       <class name="webDriverManagerExamples.WDM_ChromeHeadless"/>
       <class name="webDriverManagerExamples.WDM_Edge"/>
       <class name="webDriverManagerExamples.WDM_Opera"/>
-      <!-- <class name="webDriverManagerExamples.WDM_InternetExplorer"/> -->
+      <class name="webDriverManagerExamples.WDM_InternetExplorer"/>
     </classes>
   </test>  <!-- Test -->
 </suite><!-- Suite -->

@@ -11,7 +11,7 @@ import org.testng.Assert
 import org.testng.annotations.AfterTest
 import org.testng.annotations.Test
 
-import io.github.bonigarcia.wdm.EdgeDriverManager
+import io.github.bonigarcia.wdm.WebDriverManager
 
 class WDM_Edge 
 {
@@ -20,7 +20,7 @@ class WDM_Edge
 	@Test
 	public void test_Edge() throws Exception
 	{
-		EdgeDriverManager.getInstance().setup()
+		WebDriverManager.edgedriver().arch64().setup()
 		driver = new EdgeDriver()
 		driver.get('https://www.google.co.in/')
 		driver.manage().window().maximize()

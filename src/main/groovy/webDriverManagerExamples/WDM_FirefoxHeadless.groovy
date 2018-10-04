@@ -12,7 +12,7 @@ import org.testng.Assert
 import org.testng.annotations.AfterTest
 import org.testng.annotations.Test
 
-import io.github.bonigarcia.wdm.FirefoxDriverManager;
+import io.github.bonigarcia.wdm.WebDriverManager
 
 class WDM_FirefoxHeadless 
 {
@@ -24,7 +24,7 @@ class WDM_FirefoxHeadless
 	{
 		FirefoxOptions firefoxOptions = new FirefoxOptions()
 		firefoxOptions.addArguments("--headless")
-		FirefoxDriverManager.getInstance().setup()
+		WebDriverManager.firefoxdriver().arch64().setup()
 		driver = new FirefoxDriver(firefoxOptions)
 		driver.get('https://www.google.co.in/')
 		driver.manage().window().maximize()

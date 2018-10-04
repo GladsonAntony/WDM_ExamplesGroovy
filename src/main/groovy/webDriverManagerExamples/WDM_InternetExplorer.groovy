@@ -14,7 +14,8 @@ import org.testng.Assert
 import org.testng.annotations.AfterTest
 import org.testng.annotations.Test
 
-import io.github.bonigarcia.wdm.InternetExplorerDriverManager
+import io.github.bonigarcia.wdm.WebDriverManager
+
 
 class WDM_InternetExplorer 
 {
@@ -23,7 +24,7 @@ class WDM_InternetExplorer
 	@Test
 	public void test_InternetExplorer() throws Exception
 	{
-		InternetExplorerDriverManager.getInstance().setup()
+		WebDriverManager.iedriver().arch64().setup()
 		DesiredCapabilities ieCapabilities = DesiredCapabilities.internetExplorer();
 		ieCapabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true)
 		driver = new InternetExplorerDriver(ieCapabilities)

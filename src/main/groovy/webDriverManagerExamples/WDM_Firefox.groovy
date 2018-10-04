@@ -11,7 +11,7 @@ import org.testng.Assert
 import org.testng.annotations.AfterTest
 import org.testng.annotations.Test
 
-import io.github.bonigarcia.wdm.FirefoxDriverManager;
+import io.github.bonigarcia.wdm.WebDriverManager
 
 class WDM_Firefox 
 {
@@ -21,7 +21,7 @@ class WDM_Firefox
 	@Test
 	public void test_MozillaFirefox() throws Exception
 	{
-		FirefoxDriverManager.getInstance().setup()
+		WebDriverManager.firefoxdriver().arch64().setup()
 		driver = new FirefoxDriver()
 		driver.get('https://www.google.co.in/')
 		driver.manage().window().maximize()

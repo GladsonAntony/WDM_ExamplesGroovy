@@ -11,7 +11,7 @@ import org.testng.Assert
 import org.testng.annotations.AfterTest
 import org.testng.annotations.Test
 
-import io.github.bonigarcia.wdm.ChromeDriverManager
+import io.github.bonigarcia.wdm.WebDriverManager
 
 class WDM_Chrome 
 {
@@ -20,7 +20,7 @@ class WDM_Chrome
 	@Test
 	public void test_Chrome() throws Exception
 	{
-		ChromeDriverManager.getInstance().setup()
+		WebDriverManager.chromedriver().arch64().setup()
 		driver = new ChromeDriver()
 		driver.get('https://www.google.co.in/')
 		driver.manage().window().maximize()

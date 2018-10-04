@@ -6,16 +6,14 @@
 package webDriverManagerExamples
 
 import org.openqa.selenium.WebDriver
-import org.openqa.selenium.ie.InternetExplorerDriver
 import org.openqa.selenium.phantomjs.PhantomJSDriver
-import org.openqa.selenium.remote.DesiredCapabilities
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
 import org.testng.Assert
 import org.testng.annotations.AfterTest
 import org.testng.annotations.Test
 
-import io.github.bonigarcia.wdm.PhantomJsDriverManager
+import io.github.bonigarcia.wdm.WebDriverManager
 
 class WDM_PhantomJS 
 {
@@ -24,7 +22,7 @@ class WDM_PhantomJS
 	@Test
 	public void test_PhantomJs() throws Exception 
 	{
-		PhantomJsDriverManager.getInstance().setup()
+		WebDriverManager.phantomjs().arch64().setup()
 		driver = new PhantomJSDriver();
 		println 'Phantom JS Driver Setup'
 		driver.get('https://www.google.co.in/')

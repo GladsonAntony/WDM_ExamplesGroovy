@@ -14,7 +14,7 @@ import org.testng.Assert
 import org.testng.annotations.AfterTest
 import org.testng.annotations.Test
 
-import io.github.bonigarcia.wdm.OperaDriverManager
+import io.github.bonigarcia.wdm.WebDriverManager
 
 class WDM_Opera
 {
@@ -24,7 +24,7 @@ class WDM_Opera
 	@Test
 	public void test_Opera() throws Exception
 	{
-		OperaDriverManager.getInstance().setup()
+		WebDriverManager.operadriver().arch64().setup()
 		capabilities = DesiredCapabilities.operaBlink()
 		OperaOptions optionsOpera = new OperaOptions()
 		optionsOpera.setBinary('C:/Program Files/Opera/54.0.2952.64/opera.exe')
