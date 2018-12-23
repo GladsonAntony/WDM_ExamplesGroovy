@@ -33,6 +33,5 @@ class WDM_Firefox
 	void after()
 	{		
 		driver.close()
-		driver.quit()
 	}
 }

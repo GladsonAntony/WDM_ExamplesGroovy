@@ -20,7 +20,7 @@ class WDM_Edge
 	@Test
 	public void test_Edge() throws Exception
 	{
-		WebDriverManager.edgedriver().arch64().setup()
+		WebDriverManager.edgedriver().setup()
 		driver = new EdgeDriver()
 		driver.get('https://www.google.co.in/')
 		driver.manage().window().maximize()
@@ -32,6 +32,5 @@ class WDM_Edge
 	void after()
 	{
 		driver.close()
-		driver.quit()
 	}
 }
